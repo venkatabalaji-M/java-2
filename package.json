@@ -1,0 +1,14 @@
+{
+  "name": "skillup-workspace",
+  "version": "1.0.0",
+  "description": "Root workspace for SkillUp platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix skillup/backend\" \"npm run dev --prefix skillup/frontend\"",
+    "install-all": "npm install --prefix skillup/backend && npm install --prefix skillup/frontend",
+    "frontend": "npm run dev --prefix skillup/frontend",
+    "backend": "npm run dev --prefix skillup/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
